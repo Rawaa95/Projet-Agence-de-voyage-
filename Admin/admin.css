@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,900;1,500;1,600;1,800&family=Tilt+Warp&display=swap');
+
+:root{
+    --main-color:#FF006C;
+    --black:#222;
+    --white:#fff;
+    --light-black:#777;
+    --light-white:#fff9;
+    --dark-bg:rgba(0,0,0,.7);
+    --light-bg:#eee;
+    --border:.1rem solid var(--black);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --text-shadow:0 1.5rem 3rem rgba(0,0,0,.3);
+ }
+ 
+
+ *{
+     font-family: 'Poppins', sans-serif;
+     margin: 0; padding:0;
+     box-sizing: border-box;
+     outline:none;
+     border: none;
+     text-decoration: none;
+     text-transform: capitalize;
+ }
+ 
+ html{
+     font-size:62.5%;
+     overflow-x: hidden;
+ }
+ 
+ html::-webkit-scrollbar{
+     width: 1rem;
+ }
+ 
+ html::-webkit-scrollbar-track{
+     background-color: var(--white);
+ }
+ 
+ html::-webkit-scrollbar-thumb{
+     background-color: var(--main-color);
+ }
+ 
+ section{
+     padding: 5rem 10%;
+ }
+ 
+ 
+ @keyframes fadeIn{
+     0%{
+         transform: scale(0);
+         opacity: 0;
+     }
+ }
+ 
+ .heading{
+     background-size: cover !important;
+     background-position: center !important;
+     padding-top: 10rem;
+     padding-bottom: 10rem;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ 
+ }
+ 
+ .heading h1{
+     font-size: 10rem;
+     text-transform: uppercase;
+     color:var(--white) ;
+     
+ 
+ }
+ 
+ 
+ 
+ .btn{
+     display: inline-block;
+     background: var(--black);
+     margin-top: 1rem;
+     color:var(--white);
+     font-size: 1.7rem;
+     padding:1rem 3rem;
+     cursor: pointer;
+ }
+ 
+ .btn:hover{
+     background: var(--main-color);
+ 
+ }
+ 
+ .heading-title{
+     text-align:center ;
+     margin-bottom: 3rem;
+     font-size: 5rem;
+     text-transform: uppercase;
+     color: var(--black);
+ 
+ 
+ }
+ 
+ .header{
+  
+     position:sticky;
+     top:0;
+     left:0;
+     right: 0;
+     z-index: 1000;
+     background-color: var(--white);
+     display: flex;
+     padding-top: 2rem;
+     padding-bottom: 2rem;
+     box-shadow: var(--box-shadow);
+     align-items: center;
+     justify-content: space-between;
+ }
+ 
+ .header .logo{
+     font-size: 2.5rem;
+     color: var(--black);
+ }
+ 
+ 
+ 
+ .header .navbar a {
+     font-size: 2rem;
+     margin-left: 2rem;
+     color: var(--black);
+ 
+ 
+ }
+ 
+ .header .navbar a:hover{
+     color:#FF006C;
+ }
+ 
+ #menu-btn{
+     font-size: 2.5rem;
+     cursor: pointer;
+     color: var(--black);
+     display: none;
+ }
+ 
+ 
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	background-color: #4d4d4d;
+	color: #fff;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+}
+
+nav ul li {
+	margin-right: 20px;
+}
+
+nav ul li:last-child {
+	margin-right: 0;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+main {
+	max-width: 1000px;
+	margin: 50px auto;
+	padding: 0 20px;
+}
+
+.panel {
+	border: 1px solid #ddd;
+	padding: 20px;
+	margin-bottom: 30px;
+	background-color: #f9f9f9;
+}
+
+.panel h3 {
+	margin-bottom: 20px;
+}
+
+.panel .content p {
+	margin-bottom: 0;
+}
+
+footer {
+	padding: 20px;
+	background-color: #ddd;
+	text-align: center;
+}
+
+
+
+
+
+/* style général de la page */
+body {
+    background-color: #f2f2f2;
+    text-align: center;
+  }
+  
+  /* style du formulaire */
+  form {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #cccccc;
+    display: inline-block;
+    padding: 10px;
+    width: 70%;
+   
+  }
+
+  /* style du titre */
+  .espace-admin form h1{
+    padding-top: 10px;
+    color : #333333; 
+    padding-bottom:10px;
+    font-size: 20px;
+    
+  }
+  
+  /* style des champs de saisie */
+  input[type="text"], input[type="password"] {
+    border: none;
+    border-bottom: 2px solid #cccccc;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width:90%;
+  }
+
+  .img-admin img{
+   width: 50%;
+   height: 60%;
+
+}
+  /* style du bouton */
+
+  input[type="submit"] {
+    background-color: #333333;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    width:50%;
+  }
+
+  /* effet de survol sur le bouton */
+  input[type="submit"]:hover {
+    background-color: #FF006C;
+  }
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  .editUserBtn{
+    background-color: #fff;
+    color: #333333;
+    padding: 5px 15px;
+    border: 0px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.editUserBtn:hover{
+    background-color: #333333;
+    color:#fff;
+}
+.DeleteUserBtn{
+    background-color: #fff;
+    color: #FF006C;
+    padding: 5px 15px;
+    border: 0px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.DeleteUserBtn:hover{
+    background-color:#FF006C;
+    color:#fff;
+}
+
+.tableUsersHead>th{
+    text-align: center;
+}
+.UserRow>td{
+    text-align: center;
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1; 
+    padding-top: 10%;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+  }
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.EditUserForm{
+    margin: 0px 20%;
+}
+.EditUserForm>input{
+    padding: 5px;
+    font-size: 14px;
+    padding-top: 15px;
+}
+.EditUserForm>p{
+    margin-top: 10px;
+    font-weight: bold;
+}
+.SaveDataBtn{
+    font-size: 16px;
+    padding: 10px 50px;
+    color: #FFF;
+    background-color: var(--main-color);
+    border-radius: 15px;
+    cursor: pointer;
+}
+.SaveDataBtn:hover{
+    background-color: #006a62;
+}
+.ConfirmDeleteUserBtn{
+    font-size: 16px;
+    margin: 10px;
+    padding: 10px 50px;
+    color: #FFF;
+    background-color: #FF006C;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.ConfirmDeleteUserBtn:hover{
+    background-color: #ca0e0e;
+}
+.DismissBtn{
+    font-size: 16px;
+    margin: 10px;
+    padding: 10px 50px;
+    color: #FFF;
+    background-color: #4d4d4d;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
+
+
+
+  
